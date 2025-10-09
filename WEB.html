@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Artesano del Hierro | Muebles de Hierro Forjado</title>
+  <link rel="icon" type="image/png" href="../.img/logo.png">
+  <link rel="stylesheet" href="../.css/STYLE.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <div class="logo-circle">
+          <img src="../.img/logo.png" alt="El Artesano del Hierro">
+        </div>
+        <span>Bienvenidos!</span>
+      </div>
+      <nav>
+        <a href="#inicio"><i class="fas fa-home"></i> Inicio</a>
+        <a href="#productos"><i class="fas fa-tools"></i> Productos</a>
+        <a href="#contacto"><i class="fas fa-phone"></i> Contacto</a>
+        <a href="#carrito" class="cart-btn"><i class="fas fa-shopping-cart"></i> Carrito <span class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Hero -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-title">
+        <div class="hero-logo-circle">
+          <img src="../.img/logo.png" alt="Logo El Artesano del Hierro">
+        </div>
+        <h1>El Artesano del Hierro</h1>
+      </div>
+      <p class="hero-subtitle">Muebles únicos de hierro y madera forjados a mano</p>
+      <p class="hero-description">Más de 2 años creando piezas duraderas con la mejor calidad. Calidad, durabilidad y estilo en cada pieza.</p>
+      <div class="hero-buttons">
+        <a href="#productos" class="btn-primary"><i class="fas fa-eye"></i> Ver Catálogo</a>
+        <a href="#contacto" class="btn-secondary"><i class="fab fa-whatsapp"></i> Contactar</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <i class="fas fa-award"></i>
+        <span class="stat-number">2+</span>
+        <span class="stat-label">Años de experiencia</span>
+      </div>
+      <div class="stat">
+        <i class="fas fa-users"></i>
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Clientes satisfechos</span>
+      </div>
+      <div class="stat">
+        <i class="fas fa-tools"></i>
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Proyectos realizados</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <main id="productos" class="slides-container">
+    <div class="section-title">
+      <h2>Nuestros Productos</h2>
+      <p>Descubre nuestra amplia gama de muebles de hierro forjado</p>
+    </div>
+
+    <div class="slide" id="escritorios">
+      <div class="slide-image">
+        <img src="../.img/bancos.jpg" alt="Escritorios de Hierro" onerror="this.src='https://images.unsplash.com/photo-1549497538-303791108f95?w=600&h=400&fit=crop'">
+      </div>
+      <div class="slide-content">
+        <div class="slide-icon"><i class="fas fa-desktop"></i></div>
+        <h3>Escritorios</h3>
+        <p>Diseños ergonómicos y minimalistas para espacios de trabajo modernos. Estructura de hierro macizo con acabados premium.</p>
+        <div class="slide-features">
+          <span><i class="fas fa-check"></i> Hierro forjado</span>
+          <span><i class="fas fa-check"></i> Diseño personalizable</span>
+          <span><i class="fas fa-check"></i> Garantía 1 año</span>
+        </div>
+        <div class="slide-actions">
+          <a href="catalogo-escritorios.html" class="btn-catalog" target="_blank"><i class="fas fa-eye"></i> Ver Catálogo</a>
+          <a href="#escritorios" class="btn-info">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="sillas">
+      <div class="slide-image">
+        <img src="../.img/sillas de hierro.jpg" alt="Sillas de Hierro" onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop'">
+      </div>
+      <div class="slide-content">
+        <div class="slide-icon"><i class="fas fa-chair"></i></div>
+        <h3>Sillas de Hierro</h3>
+        <p>Estructura de hierro macizo con acabados elegantes y duraderos. Ideales para comedor y espacios exteriores.</p>
+        <div class="slide-features">
+          <span><i class="fas fa-check"></i> Resistente al clima</span>
+          <span><i class="fas fa-check"></i> Varios colores</span>
+          <span><i class="fas fa-check"></i> Garantía 1 año</span>
+        </div>
+        <div class="slide-actions">
+          <a href="catalogo-sillas.html" class="btn-catalog" target="_blank"><i class="fas fa-eye"></i> Ver Catálogo</a>
+          <a href="#sillas" class="btn-info">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="gimnasio">
+      <div class="slide-image">
+        <img src="../.img/Gimnacio.jpg" alt="Equipos de Gimnasio" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop'">
+      </div>
+      <div class="slide-content">
+        <div class="slide-icon"><i class="fas fa-dumbbell"></i></div>
+        <h3>Equipos de Gimnasio</h3>
+        <p>Máquinas de acero de alta resistencia para entrenamiento profesional. Diseñadas para uso intensivo y duración extrema.</p>
+        <div class="slide-features">
+          <span><i class="fas fa-check"></i> Acero industrial</span>
+          <span><i class="fas fa-check"></i> Uso profesional</span>
+          <span><i class="fas fa-check"></i> Perfecto para su entrenamiento</span>
+        </div>
+        <div class="slide-actions">
+          <a href="catalogo-gimnasio.html" class="btn-catalog" target="_blank"><i class="fas fa-eye"></i> Ver Catálogo</a>
+          <a href="#gimnasio" class="btn-info">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="bancos">
+      <div class="slide-image">
+        <img src="../.img/bancos.jpg" alt="Bancos y Bancas" onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop'">
+      </div>
+      <div class="slide-content">
+        <div class="slide-icon"><i class="fas fa-couch"></i></div>
+        <h3>Bancos</h3>
+        <p>Asientos artesanales perfectos para jardines, parques y espacios exteriores. Resistentes a la intemperie y muy duraderos.</p>
+        <div class="slide-features">
+          <span><i class="fas fa-check"></i> Para exteriores</span>
+          <span><i class="fas fa-check"></i> Anticorrosivo</span>
+          <span><i class="fas fa-check"></i> Diseño ergonómico</span>
+        </div>
+        <div class="slide-actions">
+          <a href="catalogo-bancos.html" class="btn-catalog" target="_blank"><i class="fas fa-eye"></i> Ver Catálogo</a>
+          <a href="#bancos" class="btn-info">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="personalizados">
+      <div class="slide-image">
+        <img src="../.img/decoracion.jpg" alt="Arte Decorativo" onerror="this.src='https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&h=400&fit=crop'">
+      </div>
+      <div class="slide-content">
+        <div class="slide-icon"><i class="fas fa-palette"></i></div>
+        <h3>Productos personalizados</h3>
+        <p>Piezas únicas de hierro forjado para personalizar cualquier ambiente. Desde barandas hasta esculturas personalizadas.</p>
+        <div class="slide-features">
+          <span><i class="fas fa-check"></i> Diseños únicos</span>
+          <span><i class="fas fa-check"></i> Hecho a medida</span>
+          <span><i class="fas fa-check"></i> Garantía 1 año</span>
+        </div>
+        <div class="slide-actions">
+          <a href="producto-personalizado.html" class="btn-buy" target="_blank"><i class="fas fa-palette"></i> Solicitar Pedido</a>
+          <a href="#personalizados" class="btn-info">Ver más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contact-section">
+    <div class="contact-content-centered">
+      <div class="contact-header">
+        <h2><i class="fas fa-phone-alt"></i> Contactanos</h2>
+        <p>Estamos aquí para ayudarte con tu proyecto. ¡Hablemos!</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>Teléfono</h3>
+          <p>+54 9 3846 401635</p>
+          <a href="tel:+5493846401635" class="contact-link">Llamar ahora</a>
+        </div>
+        
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email</h3>
+          <p>herreria.artesanal@gmail.com</p>
+          <a href="mailto:herreria.artesanal@gmail.com" class="contact-link">Enviar email</a>
+        </div>
+        
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Horarios de Atención</h3>
+          <p>Lunes a Viernes: 8:00 - 18:00<br>Sábados: 8:00 - 13:00<br>Domingos: Cerrado</p>
+        </div>
+      </div>
+      
+      <div class="contact-social">
+        <h3>Síguenos en Redes Sociales</h3>
+        <div class="social-buttons">
+          <a href="https://wa.me/5493846401635" class="social-btn whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a href="#" class="social-btn facebook" target="_blank">
+            <i class="fab fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="#" class="social-btn instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+
+      <div class="footer-section">
+        <h4>Productos</h4>
+        <ul>
+          <li><a href="#escritorios">Escritorios</a></li>
+          <li><a href="#sillas">Sillas</a></li>
+          <li><a href="#gimnasio">Equipos de Gimnasio</a></li>
+          <li><a href="#bancos">Bancos</a></li>
+          <li><a href="#personalizados">Producto personalizado</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Información</h4>
+        <ul>
+          <li><a href="#inicio">Sobre Nosotros</a></li>
+          <li><a href="#contacto">Formas de Pago</a></li>
+          <li><a href="#productos">Catálogo Completo</a></li>
+          <li><a href="terminos-condiciones.html" target="_blank">Términos y Condiciones</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section footer-highlights-section">
+        <h4>Nuestros Servicios</h4>
+        <div class="footer-highlights">
+          <div class="highlight-item">
+            <i class="fas fa-award"></i>
+            <div>
+              <strong>Calidad Premium</strong>
+              <p>Materiales de primera calidad</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-shipping-fast"></i>
+            <div>
+              <strong>Envíos Nacionales</strong>
+              <p>Llegamos a todo el país</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-shield-alt"></i>
+            <div>
+              <strong>Garantía Completa</strong>
+              <p>1 año de garantía total</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <div class="footer-contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</p>
+          <p><i class="fas fa-phone"></i> +54 9 3846 401635</p>
+          <p><i class="fas fa-envelope"></i> herreria.artesanal@gmail.com</p>
+          <p><i class="fas fa-clock"></i> Lun-Vie 8:00-18:00</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Herrería Artesanal. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/5493846401635?text=Hola, me interesa conocer más sobre sus productos de herrería" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">¡Chateá con nosotros!</span>
+  </a>
+
+  <script src="../.js/script.js"></script>
+</body>
+</html>

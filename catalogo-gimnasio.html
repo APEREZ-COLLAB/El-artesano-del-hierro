@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Equipos de Gimnasio | Herrería Artesanal</title>
+  <link rel="icon" type="image/png" href="../.img/logo.png">
+  <link rel="stylesheet" href="../.css/STYLE.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <div class="logo-circle">
+          <img src="../.img/logo.png" alt="El Artesano del Hierro">
+        </div>
+        <span>Bienvenidos!</span>
+      </div>
+      <nav>
+        <a href="WEB.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="catalogo-escritorios.html"><i class="fas fa-desk"></i> Escritorios</a>
+        <a href="catalogo-sillas.html"><i class="fas fa-chair"></i> Sillas</a>
+        <a href="catalogo-gimnasio.html" class="active"><i class="fas fa-dumbbell"></i> Gimnasio</a>
+        <a href="catalogo-bancos.html"><i class="fas fa-couch"></i> Bancos</a>
+        <a href="producto-personalizado.html"><i class="fas fa-tools"></i> Personalizado</a>
+        <div class="cart-icon" onclick="toggleCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Catálogo de Equipos de Gimnasio -->
+  <section class="catalog-section" style="margin-top: 100px;">
+    <div class="catalog-header">
+      <h1><i class="fas fa-dumbbell"></i> Catálogo de Equipos de Gimnasio</h1>
+      <p>Equipos profesionales de acero para tu gimnasio en casa o comercial</p>
+      <a href="WEB.html#productos" class="back-link"><i class="fas fa-arrow-left"></i> Volver al catálogo principal</a>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="../.img/Gimnacio.jpg" alt="Banco de Pesas" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Banco de Pesas Ajustable</h3>
+          <p>Banco profesional con respaldo ajustable. Estructura de acero reforzado para máxima seguridad.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> Respaldo ajustable</span>
+            <span><i class="fas fa-check"></i> Acero reforzado</span>
+            <span><i class="fas fa-check"></i> Hasta 200kg</span>
+          </div>
+          <div class="product-price">$120.000</div>
+          <button class="btn-buy-product" data-product="Banco de Pesas Ajustable" data-price="120000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="../.img/Gimnacio.jpg" alt="Rack de Sentadillas" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Rack de Sentadillas</h3>
+          <p>Estructura robusta para sentadillas y ejercicios con barra. Incluye barras de seguridad ajustables.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> Barras seguridad</span>
+            <span><i class="fas fa-check"></i> Altura ajustable</span>
+            <span><i class="fas fa-check"></i> Base estable</span>
+          </div>
+          <div class="product-price">$180.000</div>
+          <button class="btn-buy-product" data-product="Rack de Sentadillas" data-price="180000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="../.img/Gimnacio.jpg" alt="Máquina Multiestación" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Máquina Multiestación</h3>
+          <p>Estación completa para ejercicio integral. Múltiples funciones en un solo equipo.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> Multifuncional</span>
+            <span><i class="fas fa-check"></i> Ocupa poco espacio</span>
+            <span><i class="fas fa-check"></i> Cuerpo completo</span>
+          </div>
+          <div class="product-price">$250.000</div>
+          <button class="btn-buy-product" data-product="Máquina Multiestación" data-price="250000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="../.img/Gimnacio.jpg" alt="Barras Paralelas" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Barras Paralelas</h3>
+          <p>Para ejercicios de fondos y entrenamiento de fuerza. Construcción sólida y estable.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> Muy estables</span>
+            <span><i class="fas fa-check"></i> Antideslizantes</span>
+            <span><i class="fas fa-check"></i> Uso intensivo</span>
+          </div>
+          <div class="product-price">$75.000</div>
+          <button class="btn-buy-product" data-product="Barras Paralelas" data-price="75000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer simplificado -->
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Herrería Artesanal. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../.js/script.js"></script>
+</body>
+</html>

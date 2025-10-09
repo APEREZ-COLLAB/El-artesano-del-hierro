@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Escritorios | Herrería Artesanal</title>
+  <link rel="icon" type="image/png" href="../.img/logo.png">
+  <link rel="stylesheet" href="../.css/STYLE.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <div class="logo-circle">
+          <img src="../.img/logo.png" alt="El Artesano del Hierro">
+        </div>
+        <span>Bienvenidos!</span>
+      </div>
+      <nav>
+        <a href="WEB.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="catalogo-escritorios.html" class="active"><i class="fas fa-desk"></i> Escritorios</a>
+        <a href="catalogo-sillas.html"><i class="fas fa-chair"></i> Sillas</a>
+        <a href="catalogo-gimnasio.html"><i class="fas fa-dumbbell"></i> Gimnasio</a>
+        <a href="catalogo-bancos.html"><i class="fas fa-couch"></i> Bancos</a>
+        <a href="producto-personalizado.html"><i class="fas fa-tools"></i> Personalizado</a>
+        <div class="cart-icon" onclick="toggleCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Catálogo de Escritorios -->
+  <section class="catalog-section" style="margin-top: 100px;">
+    <div class="catalog-header">
+      <h1><i class="fas fa-desktop"></i> Catálogo de Escritorios</h1>
+      <p>Descubre nuestra colección completa de escritorios de hierro forjado</p>
+      <a href="WEB.html#productos" class="back-link"><i class="fas fa-arrow-left"></i> Volver al catálogo principal</a>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src=".img/bancos.jpg" alt="Escritorio Ejecutivo" onerror="this.src='https://images.unsplash.com/photo-1549497538-303791108f95?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Escritorio Ejecutivo Premium</h3>
+          <p>Escritorio de lujo con estructura de hierro macizo y tapa de madera noble. Ideal para oficinas ejecutivas.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> 150cm x 70cm</span>
+            <span><i class="fas fa-check"></i> Madera noble</span>
+            <span><i class="fas fa-check"></i> Cajones integrados</span>
+          </div>
+          <div class="product-price">$85.000</div>
+          <button class="btn-buy-product" data-product="Escritorio Ejecutivo Premium" data-price="85000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src=".img/bancos.jpg" alt="Escritorio Industrial" onerror="this.src='https://images.unsplash.com/photo-1549497538-303791108f95?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Escritorio Industrial</h3>
+          <p>Diseño minimalista con estructura de hierro vista y tapa de madera rústica. Perfecto para espacios modernos.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> 120cm x 60cm</span>
+            <span><i class="fas fa-check"></i> Madera rústica</span>
+            <span><i class="fas fa-check"></i> Diseño moderno</span>
+          </div>
+          <div class="product-price">$65.000</div>
+          <button class="btn-buy-product" data-product="Escritorio Industrial" data-price="65000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src=".img/bancos.jpg" alt="Escritorio Compacto" onerror="this.src='https://images.unsplash.com/photo-1549497538-303791108f95?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Escritorio Compacto</h3>
+          <p>Ideal para espacios pequeños. Estructura ligera de hierro con tapa de melamina resistente.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> 100cm x 50cm</span>
+            <span><i class="fas fa-check"></i> Tapa melamina</span>
+            <span><i class="fas fa-check"></i> Ahorra espacio</span>
+          </div>
+          <div class="product-price">$45.000</div>
+          <button class="btn-buy-product" data-product="Escritorio Compacto" data-price="45000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src=".img/bancos.jpg" alt="Escritorio Gaming" onerror="this.src='https://images.unsplash.com/photo-1549497538-303791108f95?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Escritorio Gaming Pro</h3>
+          <p>Diseñado especialmente para gamers. Con soporte para cables y superficie antideslizante.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> 140cm x 70cm</span>
+            <span><i class="fas fa-check"></i> Gestión de cables</span>
+            <span><i class="fas fa-check"></i> Superficie gaming</span>
+          </div>
+          <div class="product-price">$75.000</div>
+          <button class="btn-buy-product" data-product="Escritorio Gaming Pro" data-price="75000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src=".img/bancos.jpg" alt="Escritorio Esquinero" onerror="this.src='https://images.unsplash.com/photo-1549497538-303791108f95?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Escritorio Esquinero</h3>
+          <p>Aprovecha al máximo los espacios de esquina. Diseño en L con amplia superficie de trabajo.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> Diseño en L</span>
+            <span><i class="fas fa-check"></i> Optimiza espacio</span>
+            <span><i class="fas fa-check"></i> Amplia superficie</span>
+          </div>
+          <div class="product-price">$95.000</div>
+          <button class="btn-buy-product" data-product="Escritorio Esquinero" data-price="95000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src=".img/bancos.jpg" alt="Escritorio Vintage" onerror="this.src='https://images.unsplash.com/photo-1549497538-303791108f95?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Escritorio Vintage</h3>
+          <p>Estilo retro con hierro forjado artesanal y tapa de madera envejecida. Pieza única y elegante.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> Estilo vintage</span>
+            <span><i class="fas fa-check"></i> Madera envejecida</span>
+            <span><i class="fas fa-check"></i> Pieza única</span>
+          </div>
+          <div class="product-price">$110.000</div>
+          <button class="btn-buy-product" data-product="Escritorio Vintage" data-price="110000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer simplificado -->
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Herrería Artesanal. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../.js/script.js"></script>
+</body>
+</html>

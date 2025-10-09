@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Sillas | Herrería Artesanal</title>
+  <link rel="icon" type="image/png" href="../.img/logo.png">
+  <link rel="stylesheet" href="../.css/STYLE.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <div class="logo-circle">
+          <img src="../.img/logo.png" alt="El Artesano del Hierro">
+        </div>
+        <span>Bienvenidos!</span>
+      </div>
+      <nav>
+        <a href="WEB.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="catalogo-escritorios.html"><i class="fas fa-desk"></i> Escritorios</a>
+        <a href="catalogo-sillas.html" class="active"><i class="fas fa-chair"></i> Sillas</a>
+        <a href="catalogo-gimnasio.html"><i class="fas fa-dumbbell"></i> Gimnasio</a>
+        <a href="catalogo-bancos.html"><i class="fas fa-couch"></i> Bancos</a>
+        <a href="producto-personalizado.html"><i class="fas fa-tools"></i> Personalizado</a>
+        <div class="cart-icon" onclick="toggleCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Catálogo de Sillas -->
+  <section class="catalog-section" style="margin-top: 100px;">
+    <div class="catalog-header">
+      <h1><i class="fas fa-chair"></i> Catálogo de Sillas</h1>
+      <p>Descubre nuestra colección completa de sillas de hierro forjado</p>
+      <a href="WEB.html#productos" class="back-link"><i class="fas fa-arrow-left"></i> Volver al catálogo principal</a>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src=".img/sillas de hierro.jpg" alt="Silla Clásica" onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Silla Clásica de Hierro</h3>
+          <p>Diseño tradicional con respaldo ergonómico. Perfecta para comedores y espacios interiores.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> Respaldo alto</span>
+            <span><i class="fas fa-check"></i> Asiento acolchado</span>
+            <span><i class="fas fa-check"></i> Acabado premium</span>
+          </div>
+          <div class="product-price">$25.000</div>
+          <button class="btn-buy-product" data-product="Silla Clásica de Hierro" data-price="25000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src=".img/sillas de hierro.jpg" alt="Silla de Jardín" onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Silla de Jardín</h3>
+          <p>Resistente a la intemperie con tratamiento anticorrosivo. Ideal para patios y jardines.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> Anticorrosivo</span>
+            <span><i class="fas fa-check"></i> Para exterior</span>
+            <span><i class="fas fa-check"></i> Fácil limpieza</span>
+          </div>
+          <div class="product-price">$30.000</div>
+          <button class="btn-buy-product" data-product="Silla de Jardín" data-price="30000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src=".img/sillas de hierro.jpg" alt="Silla Bar" onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Silla Bar Industrial</h3>
+          <p>Altura especial para barras y desayunadores. Diseño industrial moderno con apoyapies.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> Altura bar</span>
+            <span><i class="fas fa-check"></i> Apoyapies</span>
+            <span><i class="fas fa-check"></i> Estilo industrial</span>
+          </div>
+          <div class="product-price">$35.000</div>
+          <button class="btn-buy-product" data-product="Silla Bar Industrial" data-price="35000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src=".img/sillas de hierro.jpg" alt="Silla Plegable" onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Silla Plegable</h3>
+          <p>Funcional y práctica. Se pliega completamente para ahorrar espacio cuando no se usa.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> Plegable</span>
+            <span><i class="fas fa-check"></i> Ahorra espacio</span>
+            <span><i class="fas fa-check"></i> Portátil</span>
+          </div>
+          <div class="product-price">$20.000</div>
+          <button class="btn-buy-product" data-product="Silla Plegable" data-price="20000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer simplificado -->
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Herrería Artesanal. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../.js/script.js"></script>
+</body>
+</html>

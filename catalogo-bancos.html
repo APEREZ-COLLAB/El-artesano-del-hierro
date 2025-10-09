@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Bancos | Herrería Artesanal</title>
+  <link rel="icon" type="image/png" href="../.img/logo.png">
+  <link rel="stylesheet" href="../.css/STYLE.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <div class="logo-circle">
+          <img src="../.img/logo.png" alt="El Artesano del Hierro">
+        </div>
+        <span>Bienvenidos!</span>
+      </div>
+      <nav>
+        <a href="WEB.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="catalogo-escritorios.html"><i class="fas fa-desk"></i> Escritorios</a>
+        <a href="catalogo-sillas.html"><i class="fas fa-chair"></i> Sillas</a>
+        <a href="catalogo-gimnasio.html"><i class="fas fa-dumbbell"></i> Gimnasio</a>
+        <a href="catalogo-bancos.html" class="active"><i class="fas fa-couch"></i> Bancos</a>
+        <a href="producto-personalizado.html"><i class="fas fa-tools"></i> Personalizado</a>
+        <div class="cart-icon" onclick="toggleCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Catálogo de Bancos y Bancas -->
+  <section class="catalog-section" style="margin-top: 100px;">
+    <div class="catalog-header">
+      <h1><i class="fas fa-couch"></i> Catálogo de Bancos y Bancas</h1>
+      <p>Bancos y bancas artesanales de hierro forjado para cualquier espacio</p>
+      <a href="WEB.html#productos" class="back-link"><i class="fas fa-arrow-left"></i> Volver al catálogo principal</a>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="../.img/bancos.jpg" alt="Banco Industrial" onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Banco Industrial</h3>
+          <p>Banco robusto de hierro forjado con acabado industrial perfecto para talleres y espacios de trabajo.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> Hierro forjado</span>
+            <span><i class="fas fa-check"></i> Acabado industrial</span>
+            <span><i class="fas fa-check"></i> Muy resistente</span>
+          </div>
+          <div class="product-price">$15.000</div>
+          <button class="btn-buy-product" data-product="Banco Industrial" data-price="15000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="../.img/bancos.jpg" alt="Banca de Jardín" onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Banca de Jardín</h3>
+          <p>Banca elegante para exteriores con respaldo artístico, ideal para jardines y patios.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> Diseño artístico</span>
+            <span><i class="fas fa-check"></i> Resistente al clima</span>
+            <span><i class="fas fa-check"></i> Con respaldo</span>
+          </div>
+          <div class="product-price">$25.000</div>
+          <button class="btn-buy-product" data-product="Banca de Jardín" data-price="25000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="../.img/bancos.jpg" alt="Banco Plegable" onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Banco Plegable</h3>
+          <p>Banco plegable práctico y resistente, fácil de almacenar cuando no se usa.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> Plegable</span>
+            <span><i class="fas fa-check"></i> Fácil almacenaje</span>
+            <span><i class="fas fa-check"></i> Muy práctico</span>
+          </div>
+          <div class="product-price">$12.000</div>
+          <button class="btn-buy-product" data-product="Banco Plegable" data-price="12000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="../.img/bancos.jpg" alt="Banca con Almacenamiento" onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=300&fit=crop'">
+        </div>
+        <div class="product-info">
+          <h3>Banca con Almacenamiento</h3>
+          <p>Banca funcional con espacio de almacenamiento interno, perfecta para entradas y dormitorios.</p>
+          <div class="product-features">
+            <span><i class="fas fa-check"></i> Con almacenamiento</span>
+            <span><i class="fas fa-check"></i> Multifuncional</span>
+            <span><i class="fas fa-check"></i> Diseño moderno</span>
+          </div>
+          <div class="product-price">$30.000</div>
+          <button class="btn-buy-product" data-product="Banca con Almacenamiento" data-price="30000">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p><i class="fas fa-phone"></i> +52 123 456 7890</p>
+        <p><i class="fas fa-envelope"></i> info@elartesanodelhierro.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Calle Principal #123, Ciudad</p>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Información</h3>
+        <a href="terminos-condiciones.html">Términos y Condiciones</a>
+        <a href="producto-personalizado.html">Productos Personalizados</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 El Artesano del Hierro. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../.js/script.js"></script>
+</body>
+</html>
